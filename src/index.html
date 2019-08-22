@@ -19,5 +19,14 @@
         <h2>Change the font size:</h2>
         <p id="test">JavaScript can change the style of an HTML element.</p>
         <button type="button" onclick="document.getElementById('test').style.fontSize='35px'">Click Me!</button>
+        <hr>
+        <h2>Change paragraph:</h2>
+        <p id="newp">Hello everybody!</p>
+        <button type="button" onclick="myFunction()">Try it</button>
+        <script>
+        function myFunction() {
+            document.getElementById("newp").innerHTML = "How you doin'?";
+        }
+        </script>
     </body>
 </html>
