@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <title>JS Playground</title>
-    </head>
-    <body>
-        <h1>JS Playground</h1>
-        <hr>
-        <h2>Button Date and Time:</h2>
-        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Vas Happenin'</button>
-        <p id="demo"></p>
-        <hr>
-        <h2>Smile and Sad face:</h2>
-        <button onclick="document.getElementById('myImage').src='../image/large.jpg'">One Direction Sad faces</button>
-        <img id="myImage" src="../image/large.jpg" style="width: 300px; height: 300px">
-        <button onclick="document.getElementById('myImage').src='../image/images.jpg'">One Direction Smiling</button>
-        <hr>
-        <h2>Change the font size:</h2>
-        <p id="test">JavaScript can change the style of an HTML element.</p>
-        <button type="button" onclick="document.getElementById('test').style.fontSize='35px'">Click Me!</button>
-        <hr>
-        <h2>Change paragraph:</h2>
-        <p id="newp">Hello everybody!</p>
-        <button type="button" onclick="myFunction()">Try it</button>
-        <script>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>JS Playground</title>
+</head>
+
+<body>
+    <h1>JS Playground</h1>
+    <hr>
+    <h2>Button Date and Time:</h2>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Vas Happenin'</button>
+    <p id="demo"></p>
+    <hr>
+    <h2>Smile and Sad face:</h2>
+    <button onclick="document.getElementById('myImage').src='../image/large.jpg'">One Direction Sad faces</button>
+    <img id="myImage" src="../image/large.jpg" style="width: 300px; height: 300px">
+    <button onclick="document.getElementById('myImage').src='../image/images.jpg'">One Direction Smiling</button>
+    <hr>
+    <h2>Change the font size:</h2>
+    <p id="test">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('test').style.fontSize='35px'">Click Me!</button>
+    <hr>
+    <h2>Change paragraph:</h2>
+    <p id="newp">Hello everybody!</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <script>
         function myFunction() {
             document.getElementById("newp").innerHTML = "How you doin'?";
         }
-        </script>
-        <hr>
-        <h2>JavaScript String Methods</h2>
-        <h3>Replace "Inthebooks" with "Keziajsplayground" in the paragraph below:</h3>
-        <button onclick="myFunction()">Click here</button>
-        <p id="intkez">Please visit Inthebooks!</p>
-        <script>
-        function myFunction() {
+    </script>
+    <hr>
+    <h2>JavaScript String Methods</h2>
+    <p>Replace "Inthebooks" with "Keziajsplayground" in the paragraph below:</p>
+    <button onclick="replaceFunction()">Click here</button>
+    <p id="intkez">Please visit Inthebooks!</p>
+    <script>
+        function replaceFunction() {
             var str = document.getElementById("intkez").innerHTML;
-            var txt = str.replace(/INTHEBOOKS/i,"Keziajsplayground");
+            var txt = str.replace(/INTHEBOOKS/i, "Keziajsplayground");
             document.getElementById("intkez").innerHTML = txt;
         }
-        </script>
-        <h3>Convert string to upper case:</h3>
-        <button onclick="myFunction()">Try it on</button>
-        <p id="convstr">"I don't know where I'm going to be in five years and I don't want to know, I want my life to be ann adventure." - Robin Scherbatsky.</p>
-        <script>
-        function myFunction() {
-            var text = document.getElementById("convstr").innerHTML;
-            document.getElementById("convstr").innerHTML = text.toUpperCase();
-        }
-        </script>
-    </body>
+    </script>
+
+    <hr>
+
+</body>
+
 </html>
