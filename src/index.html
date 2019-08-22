@@ -28,5 +28,18 @@
             document.getElementById("newp").innerHTML = "How you doin'?";
         }
         </script>
+        <hr>
+        <h2>JavaScript String Methods</h2>
+        <p>Replace "Inthebooks" with "Keziajsplayground" in the paragraph below:</p>
+        <button onclick="myFunction()">Click here</button>
+        <p id="intkez">Please visit Inthebooks!</p>
+        <script>
+        function myFunction() {
+            var str = document.getElementById("intkez").innerHTML;
+            var txt = str.replace(/INTHEBOOKS/i,"Keziajsplayground");
+            document.getElementById("intkez").innerHTML = txt;
+        }
+        </script>
+
     </body>
 </html>
