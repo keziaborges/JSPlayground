@@ -47,16 +47,16 @@
     <h2>JavaScript String.trim()</h2>
 
     <p>Click the button to alert the string with removed whitespace.</p>
-    
+
     <button onclick="stringFunction()">Try it</button>
-    
+
     <p><strong>Note:</strong> The trim() method is not supported in Internet Explorer 8 and earlier versions.</p>
-    
+
     <script>
-    function stringFunction() {
-      var str = "     Hello World!     ";
-      alert(str.trim());
-    }
+        function stringFunction() {
+            var str = "     Hello World!     ";
+            alert(str.trim());
+        }
     </script>
 
     <hr>
@@ -65,16 +65,34 @@
     <button onclick="arrFunction()">Click Me</button>
     <p id="artest"></p>
     <script>
-    var fruits = ["Avocado","Banana","Blackbarry","Mango"];
-    document.getElementById("artest").innerHTML = fruits;
-
-    function arrFunction() {
-        fruits.push("Watermelon");
+        var fruits = ["Avocado", "Banana", "Blackbarry", "Mango"];
         document.getElementById("artest").innerHTML = fruits;
+
+        function arrFunction() {
+            fruits.push("Watermelon");
+            document.getElementById("artest").innerHTML = fruits;
+        }
+    </script>
+
+    <hr>
+    <h2>JavaScript Array Sort</h2>
+    <p>Click the buttons to sort the array alphabetically or numerically. </p>
+    <button onclick="myFunction1()">Sort Alphabetically</button>
+    <button onclick="myFunction2()">Sort Numerically</button>
+    <p id="demo2"></p>
+    <script>
+    var points = [40,100,1,5,25,10];
+    document.getElementById("demo2").innerHTML = points;
+    function myFunction1() {
+        points.sort();
+        document.getElementById("demo2").innerHTML = points;
+    }
+    function myFunction2() {
+        points.sort(function(a,b){return a - b});
+        document.getElementById("demo2").innerHTML = points;
     }
     </script>
 
-    
 </body>
 
 </html>
