@@ -30,7 +30,7 @@
         </script>
         <hr>
         <h2>JavaScript String Methods</h2>
-        <p>Replace "Inthebooks" with "Keziajsplayground" in the paragraph below:</p>
+        <h3>Replace "Inthebooks" with "Keziajsplayground" in the paragraph below:</h3>
         <button onclick="myFunction()">Click here</button>
         <p id="intkez">Please visit Inthebooks!</p>
         <script>
@@ -40,6 +40,14 @@
             document.getElementById("intkez").innerHTML = txt;
         }
         </script>
-
+        <h3>Convert string to upper case:</h3>
+        <button onclick="myFunction()">Try it on</button>
+        <p id="convstr">"I don't know where I'm going to be in five years and I don't want to know, I want my life to be ann adventure." - Robin Scherbatsky.</p>
+        <script>
+        function myFunction() {
+            var text = document.getElementById("convstr").innerHTML;
+            document.getElementById("convstr").innerHTML = text.toUpperCase();
+        }
+        </script>
     </body>
 </html>
