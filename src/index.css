@@ -1,0 +1,26 @@
+body {
+    background-color: grey
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: black
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black
+}
+
+button {
+    color: rgb(7, 7, 160);
+    background-color: cadetblue
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black
+}
