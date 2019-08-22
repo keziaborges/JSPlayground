@@ -59,6 +59,21 @@
     }
     </script>
 
+    <hr>
+    <h2>JavaScript Arrays</h2>
+    <p>The push method appends a new element to an array.</p>
+    <button onclick="arrFunction()">Click Me</button>
+    <p id="artest"></p>
+    <script>
+    var fruits = ["Avocado","Banana","Blackbarry","Mango"];
+    document.getElementById("artest").innerHTML = fruits;
+
+    function arrFunction() {
+        fruits.push("Watermelon");
+        document.getElementById("artest").innerHTML = fruits;
+    }
+    </script>
+
     
 </body>
 
