@@ -31,8 +31,13 @@ p {
     color: black
 }
 
-input {
-     color: rgb(7, 7, 160);
-     background-color: cadetblue
+form {
+     color: black;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 25px
+}
 
+input { 
+    color: rgb(7, 7, 160);
+    background-color: cadetblue
 }
