@@ -30,3 +30,9 @@ p {
     font-size: 20px;
     color: black
 }
+
+input {
+     color: rgb(7, 7, 160);
+     background-color: cadetblue
+
+}
