@@ -30,6 +30,20 @@
             document.getElementById("newp").innerHTML = "How you doin'?";
         }
     </script>
+
+    <hr>
+    <h2>JavaScript Statements</h2>
+    <p>JavaScript code blocks are written between { and }</p>
+    <button type="button" onclick="myFunction4()">Click Me!</button>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+        function myFunction4() {
+            document.getElementById("demo4").innerHTML = "May the Force";
+            document.getElementById("demo5").innerHTML = "be with you!";
+        }
+    </script>
+
     <hr>
     <h2>JavaScript String Methods</h2>
     <p>Replace "Inthebooks" with "Keziajsplayground" in the paragraph below:</p>
@@ -45,16 +59,13 @@
 
     <hr>
     <h2>JavaScript String.trim()</h2>
-
     <p>Click the button to alert the string with removed whitespace.</p>
-
     <button onclick="stringFunction()">Try it</button>
-
     <p><strong>Note:</strong> The trim() method is not supported in Internet Explorer 8 and earlier versions.</p>
 
     <script>
         function stringFunction() {
-            var str = "     Hello World!     ";
+            var str = "Hello World!";
             alert(str.trim());
         }
     </script>
@@ -94,28 +105,27 @@
     </script>
 
     <hr>
-   
-        <form style="margin-top:20px">
-            <b>Find Your Age</b><br>
-            <input style="height:40px;width:200px;padding-left:20px;" 
-            placeholder="Type Your Birth Year..."
-                type="number" id="number" />
-            <b><input style="height:40px;" type="button" value="Find Age" id="button"/></b>
-           
-                <p id="age">Age</p>
-          
-        </form>
-  
+
+    <form style="margin-top:20px">
+        <b>Find Your Age</b><br>
+        <input style="height:40px;width:200px;padding-left:20px;" placeholder="Type Your Birth Year..." type="number"
+            id="number" />
+        <b><input style="height:40px;" type="button" value="Find Age" id="button" /></b>
+
+        <p id="age">Age</p>
+
+    </form>
+
     <script type="text/javascript">
         function calculate() {
-            var number=document.getElementById("number").value;
-            if (number==""||number==0) {
+            var number = document.getElementById("number").value;
+            if (number == "" || number == 0) {
                 window.alert("please type your correct birth year!");
             }
-            var date=new Date().getFullYear();
-            var age=number-date;
-            document.getElementById("age").style.display="block";
-            document.getElementById("age").innerHTML="Your age is" + age;
+            var date = new Date().getFullYear();
+            var age = number - date;
+            document.getElementById("age").style.display = "block";
+            document.getElementById("age").innerHTML = "Your age is" + age;
         }
         document.getElementById("age").style.display = "none";
         document.getElementById("button").onclick = function () { calculate(); };
